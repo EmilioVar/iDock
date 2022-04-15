@@ -1,0 +1,116 @@
+:root{
+    --mode-background-color: red;
+    --main-color: black;
+}
+/** dark mode **/
+@media (prefers-color-scheme: dark){
+    body{
+        background-color: rgb(44, 44, 44);
+    }
+    h1,h2,h3,h4,h5,h6{
+        color: white;
+    }
+    nav{
+        background-color: black;
+    }
+}
+*{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.contenedor{
+    margin-top: 298px;
+    margin-left: 106px;
+    height: 300px;
+}
+.fondo{
+    background-image: url(./img/dock.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 383px;
+    height: 500px;
+    position: relative;
+}
+/** 360px para alinearse con el dock **/
+.img-mobile{
+    animation: mobile 5s ease-in-out 1;
+    position: absolute;
+    width: 355px;
+    bottom: 330px;
+}
+@keyframes mobile{
+    0%{
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    50%{
+        opacity: 1;
+        transform: translateY(-40px);
+    }
+}
+
+/** de la pagina **/
+.box-style{
+    box-shadow: 5px 5px 5px black;
+    margin: 25px;
+    padding: 15px;
+    border-radius: 15px;
+    width: 200px;
+    height: 200px;
+}
+.text-cabecera1{
+    animation: txt-cabecera 3s ease-in-out 1;
+}
+.text-cabecera2{
+    animation: txt-cabecera2 3s ease-in-out 1 0.5s backwards;
+
+}
+@keyframes txt-cabecera{
+    0%{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes txt-cabecera2{
+    0%{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.box-1{
+    background-color: #C0C0C0;
+}
+.box-2{
+    background-color: #C0C0C0;
+}
+.box-3{
+    background-color: #C0C0C0;
+}
+.box-4{
+    background-color: #C0C0C0;
+}
+/** caracteristicas **/
+.caracteristicas{
+    position: sticky;
+    top: 0;
+    display: grid;
+    background-color: #c0c0c0;
+    grid-template-columns: repeat(3,1fr);
+}
+.item-1{
+    background-color: rgba(255, 0, 0, 0.39);
+}
+.item-2{
+    background-color: rgba(172, 255, 47, 0.406);
+}
+.item-3{
+    background-color: rgba(0, 0, 255, 0.447);
+}
